@@ -15,7 +15,7 @@ def printboard(board):
         print("2 ", end = '')
     print("")
   print("-------------")
-  print("1 2 3 4 5 6 7")
+  print("1 2 3 4 5 6 7 \n")
 
 def initboard():
   board = []
