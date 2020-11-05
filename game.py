@@ -1,9 +1,10 @@
-# ACTUAL GAME WITH AI VERSION THATS REALLY STUPID and needs to be ported to discord lmao
+# I ended up having a lot of trouble trying to implement discord so I left out the bot idea and focused on algortihm and application
+# visuals were lacking as a result since i used a text representation (originally for discord emojis)
 
 import random
 
 def printboard(board):
-  print("NOTE: 1 represents the disks of player 1. 2 represents the disks of player 2. 0 represents an empty space. The dashes represent the split between the board and the columns you may use as inputs to play your disk!/n")
+
   for x in range (0, len(board)):
     for y in range (0,len(board[0])):
       if board[x][y] == 0:
@@ -146,6 +147,7 @@ def checkWin(board):
 
 def playGame():
   board = initboard()
+  print("NOTE: 1 represents the disks of player 1. 2 represents the disks of player 2. 0 represents an empty space. The dashes represent the split between the board and the columns you may use as inputs to play your disk!\n")
   printboard(board)
 
   gameOver = False
@@ -237,6 +239,7 @@ def minimax(board):
 
 def playGameAI():
   board = initboard()
+  print("NOTE: 1 represents the disks of player 1. 2 represents the disks of player 2. 0 represents an empty space. The dashes represent the split between the board and the columns you may use as inputs to play your disk!\n")
   printboard(board)
 
   gameOver = False
