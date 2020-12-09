@@ -258,6 +258,8 @@ def playGameAI():
         if state == 2:
             print("Aw shucks... Looks like I've lost. Good job!")
       playerNum = 1
+      
+      
     else:
       while True:
         userInput = int(input("Player "+str(playerNum)+", please enter the column you would like to place your connect four disk: "))
